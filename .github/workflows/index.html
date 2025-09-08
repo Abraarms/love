@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>abraar.ms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="slider-container">
+      <div class="slider-images">
+        <div class="slider-img">
+          <img src="image/" alt="1" />
+          <h1>Mike</h1>
+          <div class="details">
+            <h2>Mike</h2>
+            <p>web3 Developer</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/2.jpg" alt="2" />
+          <h1>School</h1>
+          <div class="details">
+            <h2>School</h2>
+            <p>28 April 2025</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/6.jpg" alt="6" />
+          <h1>Bukber</h1>
+          <div class="details">
+            <h2>Bukber</h2>
+            <p>18 Maret 2025</p>
+          </div>
+        </div>
+        <div class="slider-img active">
+          <img src="image/3.jpg" alt="3" />
+          <h1>Karin</h1>
+          <div class="details">
+            <h2>Karin</h2>
+            <p>8 February 2007</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/7.jpg" alt="7" />
+          <h1>Abraar</h1>
+          <div class="details">
+            <h2>Abraar</h2>
+            <p>26 Januari 2007</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/5.jpg" alt="5" />
+          <h1>First Date</h1>
+          <div class="details">
+            <h2>First Date</h2>
+            <p>4 Agustus 2025</p>
+          </div>
+        </div>
+        <div class="slider-img">
+          <img src="image/4.jpg" alt="4" />
+          <h1>Graduate</h1>
+          <div class="details">
+            <h2>Graduate</h2>
+            <p>7 Mei 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/jQuery.js"></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".slider-img").on("click", function () {
+          $(".slider-img").removeClass("active");
+          $(this).addClass("active");
+        });
+      });
+    </script>
+  </body>
+</html>
